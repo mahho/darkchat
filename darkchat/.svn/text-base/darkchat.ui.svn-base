@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>darkchat</class>
+ <widget class="QMainWindow" name="darkchat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>darkchat</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="2">
+     <widget class="QTextBrowser" name="chat">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>180</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="linia">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">margin: 0px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QListWidget" name="users">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>45</horstretch>
+        <verstretch>50</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" rowspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>40</horstretch>
+        <verstretch>20</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="info">
+       <property name="geometry">
+        <rect>
+         <x>6</x>
+         <y>10</y>
+         <width>91</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDarkChat_v_0_1">
+    <property name="title">
+     <string>DarkChat</string>
+    </property>
+    <addaction name="actionZakoncz"/>
+   </widget>
+   <widget class="QMenu" name="menuPomoc">
+    <property name="title">
+     <string>Pomoc</string>
+    </property>
+    <addaction name="actionOProgramie"/>
+   </widget>
+   <widget class="QMenu" name="menuUstawienia">
+    <property name="title">
+     <string>Ustawienia</string>
+    </property>
+    <addaction name="actionCzuwanie"/>
+    <addaction name="actionZajety"/>
+    <addaction name="separator"/>
+    <addaction name="actionKonfiguracja"/>
+   </widget>
+   <widget class="QMenu" name="menuUzytkownik">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Użytkownik</string>
+    </property>
+    <addaction name="actionWyslij_plik"/>
+    <addaction name="actionWyslij_screenshota"/>
+    <addaction name="separator"/>
+    <addaction name="actionIgnoruj"/>
+   </widget>
+   <widget class="QMenu" name="menuGry">
+    <property name="title">
+     <string>Gry</string>
+    </property>
+    <addaction name="actionGra"/>
+   </widget>
+   <addaction name="menuDarkChat_v_0_1"/>
+   <addaction name="menuUzytkownik"/>
+   <addaction name="menuUstawienia"/>
+   <addaction name="menuPomoc"/>
+   <addaction name="menuGry"/>
+  </widget>
+  <action name="actionZakoncz">
+   <property name="text">
+    <string>Wyjdź</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionOProgramie">
+   <property name="text">
+    <string>O Programie</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetShortcut</enum>
+   </property>
+  </action>
+  <action name="actionCzuwanie">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Czuwanie</string>
+   </property>
+  </action>
+  <action name="actionZajety">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Zajęty</string>
+   </property>
+  </action>
+  <action name="actionKonfiguracja">
+   <property name="text">
+    <string>Konfiguracja</string>
+   </property>
+  </action>
+  <action name="actionWyslij_plik">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Wyślij plik</string>
+   </property>
+  </action>
+  <action name="actionWyslij_screenshota">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Wyślij screenshota</string>
+   </property>
+  </action>
+  <action name="actionIgnoruj">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Ignoruj</string>
+   </property>
+  </action>
+  <action name="actionGra">
+   <property name="text">
+    <string>Snejk</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="2" margin="0"/>
+ <resources/>
+ <connections/>
+</ui>

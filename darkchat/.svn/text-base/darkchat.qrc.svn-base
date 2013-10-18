@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dc.png</file>
+        <file>dcred.png</file>
+        <file>dcgreen.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,8 @@
+DarkChat v 0.1
+* dcserv:
+    - kompilacja: qmake && make
+    - serwer uruchamia sie na porcie 9753
+    - wymaga qt4 (core, network)
+* darkchat:
+    - kompilacja: qmake && make (&& make install)
+    - wymaga qt4 (core, qtgui, network)

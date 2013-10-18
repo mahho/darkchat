@@ -1,0 +1,46 @@
+Lista TODO:
+--== 0.1 ==--
+* dcserv:
+[X] start serwera
+[X] przyjmowanie klientow 
+[X] przekazywanie wiadomosci
+[X] wysylanie listy osob
+
+* darkchat:
+[X] uruchamianie aplikacji
+[X] okno rozmowy, okno listy ludzi
+[X] wysylanie wiadomosci do serwera
+[X] odbior wiadomosci z serwera
+[X] odbior listy ludzi
+[X] ustawianie nicka
+
+--== 0.2 ==--
+* dcserv:
+[.] autoryzacja klienta
+
+* darkchat: 
+[++] opcje (kolor czcionki, zmiana nicka, zmiana serwera)
+[X] chowanie do traya + trayiconka
+[-] sprawdzanie czy darkchat nie jest juz uruchomiony // qtsingleapp - moze uda sie jakos ominac
+[+] pokazywanie adresow ip userow (join, priv)
+[.] obsluga autoryzacji
+[X] obsluga kodowanych wiadomosci
+[X] tryb zajety [niepelny, bo i po co]
+
+--== 0.3 ==--
+* dcserv:
+[ ] obsluga prywatnych rozmow 
+
+* darkchat:
+[ ] obsluga prywatnych rozmow 
+[X] logowanie rozmow do pliku (txt/sqlite?)
+[ ] uruchamianie przy starcie
+
+--== 0.4 ==--
+* darkchat
+[ ] powiadomienie w trayu o nowej wiadomosci (public/priv)
+
+--== 0.5 ==--
+* dcserv && darkchat:
+[ ] przesylanie plikow
+
